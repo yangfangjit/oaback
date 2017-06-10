@@ -16,4 +16,10 @@ public class HomeController {
 		logger.info("home");
 		return "home";
 	}
+	
+	@RequestMapping(value="/hello", method=RequestMethod.GET)
+	public void hello() {
+		logger.info("hello, http test!");
+	}
+	
 }
