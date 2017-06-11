@@ -2,3 +2,15 @@
 /target
 /.settings
 /.project
+/oaback-bean/.classpath
+/oaback-bean/target
+/oaback-bean/.settings
+/oaback-bean/.project
+/oaback-service/.classpath
+/oaback-service/target
+/oaback-service/.settings
+/oaback-service/.project
+/oaback-utils/.classpath
+/oaback-utils/target
+/oaback-utils/.settings
+/oaback-utils/.project
