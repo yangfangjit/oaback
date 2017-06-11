@@ -31,7 +31,7 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
-		<property name="typeAliasesPackage" value="com.banana.oaback.bean" />
+		<property name="typeAliasesPackage" value="com.banana.oaback.entity" />
 		<property name="mapperLocations" value="classpath:mapper/*.xml" />
 	</bean>
 

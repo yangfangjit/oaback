@@ -1,4 +1,4 @@
-package com.banana.oaback.bean;
+package com.banana.oaback.entity;
 
 import java.io.Serializable;
 

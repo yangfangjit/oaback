@@ -2,7 +2,7 @@ package com.banana.oaback.service;
 
 import java.util.List;
 
-import com.banana.oaback.bean.Employee;
+import com.banana.oaback.entity.Employee;
 
 public interface EmployeeService {
 

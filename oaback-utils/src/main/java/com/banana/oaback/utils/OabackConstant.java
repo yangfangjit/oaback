@@ -1,8 +1,11 @@
 package com.banana.oaback.utils;
 
-public class OabackConstant {
+public class OabackConstant<E> {
 
+	@SuppressWarnings("unused")
 	private static final int SUCCESS = 1;
 	
-	private static final int FAIL = 1;
+	@SuppressWarnings("unused")
+	private static final int FAILURE = 0;
+	
 }

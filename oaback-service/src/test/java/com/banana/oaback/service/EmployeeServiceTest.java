@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.banana.oaback.bean.Employee;
+import com.banana.oaback.entity.Employee;
 
 public class EmployeeServiceTest extends BaseTest {
 	

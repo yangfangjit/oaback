@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.banana.oaback.bean.Employee;
 import com.banana.oaback.dao.EmployeeDao;
+import com.banana.oaback.entity.Employee;
 import com.banana.oaback.service.EmployeeService;
 
 @Service
