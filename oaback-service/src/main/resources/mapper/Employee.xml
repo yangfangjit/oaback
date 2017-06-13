@@ -11,7 +11,6 @@
 		insert into employee(name,age)
 		values(#{name},#{age})
 	</insert>
-<<<<<<< HEAD
 
 	<insert id="insertEmployees">
 		insert into employee(name,age)
@@ -33,17 +32,6 @@
 		</foreach>
 	</update>
 
-=======
-	
-	<insert id="insertEmployees">
-		insert into employee(name,age) 
-		values
-		<foreach collection="list" item="item" index="index" separator=",">  
-        ( #{item.name}, #{item.age})  
-		</foreach>
-	</insert>
-	
->>>>>>> branch 'master' of https://github.com/yangfangjit/oaback.git
 	<select id="queryAll" resultType="Employee">
 		select id,name,age
 		from employee
