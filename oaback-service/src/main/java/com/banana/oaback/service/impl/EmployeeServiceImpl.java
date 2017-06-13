@@ -19,6 +19,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public int insertEmployee(Employee employee) {
 		return employeeDao.insertEmployee(employee.getName(), employee.getAge());
 	}
+	
+	@Override
+	public int insertEmployees(List<Employee> employees) {
+		return employeeDao.insertEmployees(employees);
+	}
 
 	@Override
 	public List<Employee> queryAll(int offset, int limit) {

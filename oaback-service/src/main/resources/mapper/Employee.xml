@@ -19,9 +19,16 @@
 	</select>  -->
 	
 	<insert id="insertEmployee">
-		insert 
-		into employee(name,age)
+		insert into employee(name,age)
 		values(#{name},#{age})
+	</insert>
+	
+	<insert id="insertEmployees">
+		insert into employee(name,age) 
+		values
+		<foreach collection="list" item="item" index="index" separator=",">  
+        ( #{item.name}, #{item.age})  
+		</foreach>
 	</insert>
 	
 	<select id="queryAll" resultType="Employee">

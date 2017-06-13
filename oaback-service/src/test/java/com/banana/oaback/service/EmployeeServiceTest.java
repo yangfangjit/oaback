@@ -37,5 +37,23 @@ public class EmployeeServiceTest extends BaseTest {
 		assertEquals(name, list.get(0).getName());
 		assertEquals(age, list.get(0).getAge());
 	}
+	
+	@Test
+	@Rollback
+	@Transactional
+	public void testInsertEmployees() {
+		String name = "Unit Test";
+		short age = 50;
+		Employee employee1 = new Employee(name, age);
+		
+		employeeService.insertEmployee(employee1);
+		
+		List<Employee> list = employeeService.queryAll(0, 100);
+		
+		logger.info(list.get(0).toString());
+		
+		assertEquals(name, list.get(0).getName());
+		assertEquals(age, list.get(0).getAge());
+	}
 
 }
