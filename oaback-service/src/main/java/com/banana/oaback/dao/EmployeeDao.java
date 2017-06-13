@@ -12,7 +12,10 @@ public interface EmployeeDao {
 	
 	int insertEmployees(List<Employee> employees);
 	
+<<<<<<< HEAD
 	int updateEmployees(List<Employee> employees);
 	
+=======
+>>>>>>> branch 'master' of https://github.com/yangfangjit/oaback.git
 	List<Employee> queryAll(@Param("offset") int offset,@Param("limit") int limit);
 }

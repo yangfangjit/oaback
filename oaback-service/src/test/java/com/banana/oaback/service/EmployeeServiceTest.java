@@ -45,6 +45,7 @@ public class EmployeeServiceTest extends BaseTest {
 	public void testInsertEmployees() {
 		String name = "Unit Test";
 		short age = 50;
+<<<<<<< HEAD
 		
 		Employee employee1 = new Employee(name, age);
 		List<Employee> list = new ArrayList<Employee>(2);
@@ -80,6 +81,18 @@ public class EmployeeServiceTest extends BaseTest {
 			assertEquals(updateAge, employee.getAge());
 		}
 		
+=======
+		Employee employee1 = new Employee(name, age);
+		
+		employeeService.insertEmployee(employee1);
+		
+		List<Employee> list = employeeService.queryAll(0, 100);
+		
+		logger.info(list.get(0).toString());
+		
+		assertEquals(name, list.get(0).getName());
+		assertEquals(age, list.get(0).getAge());
+>>>>>>> branch 'master' of https://github.com/yangfangjit/oaback.git
 	}
 
 }

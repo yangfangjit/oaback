@@ -10,7 +10,10 @@ public interface EmployeeService {
 	
 	int insertEmployees(List<Employee> employees);
 	
+<<<<<<< HEAD
 	int updateEmployees(List<Employee> employees);
 	
+=======
+>>>>>>> branch 'master' of https://github.com/yangfangjit/oaback.git
 	List<Employee> queryAll(int offset, int limit);
 }
