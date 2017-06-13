@@ -42,7 +42,7 @@ public class EmployeeServiceTest extends BaseTest {
 	@Test
 	@Rollback
 	@Transactional
-	public void testInsertEmployees() {
+	public void testBatchInsertAndUpdateEmployees() {
 		String name = "Unit Test";
 		short age = 50;
 		
