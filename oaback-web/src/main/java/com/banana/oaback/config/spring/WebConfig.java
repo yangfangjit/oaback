@@ -13,7 +13,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan("com.banana.oaback.controller")
-// classpath*，* means searching all jars' classpath 
 @ImportResource("classpath*:spring-dao.xml")
 public class WebConfig extends WebMvcConfigurerAdapter {
 

@@ -11,13 +11,13 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
-	@RequestMapping(value="/", method=RequestMethod.GET)
+	@RequestMapping(value="/", method=RequestMethod.GET, produces="application/json")
 	public String home() {
 		logger.info("home");
 		return "home";
 	}
 	
-	@RequestMapping(value="/hello", method=RequestMethod.GET)
+	@RequestMapping(value="/hello", method=RequestMethod.GET, produces="application/json")
 	public void hello() {
 		logger.info("hello, http test!");
 	}
