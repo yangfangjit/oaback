@@ -1,4 +1,4 @@
-package com.banana.oaback.config;
+/*package com.banana.oaback.config;
 
 import java.beans.PropertyVetoException;
 import java.io.IOException;
@@ -83,3 +83,4 @@ public class DaoConfig implements EnvironmentAware {
 	}
 	
 }
+*/
